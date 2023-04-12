@@ -1,29 +1,26 @@
 package com.example.pixelmessage;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
+
 import javafx.geometry.NodeOrientation;
-import javafx.geometry.Pos;
+
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
+
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
+
 import javafx.stage.Stage;
 
 import java.io.*;
-import java.net.ServerSocket;
+
 import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -55,15 +52,8 @@ public class ClientChatController extends Thread  implements Initializable {
     @FXML
     private Pane ChatBox;
 
-
     @FXML
     private TextArea MsgRoom;
-
-
-
-
-
-
 
     @FXML
     private ScrollPane ChatScrollPane;
@@ -73,18 +63,10 @@ public class ClientChatController extends Thread  implements Initializable {
     BufferedReader reader;
     PrintWriter writer;
 
-
-
-
-
-
-
     @Override
     public void run() {
 
         try {
-
-
 
             while (true) {
                 String msg = reader.readLine();
@@ -123,8 +105,6 @@ public class ClientChatController extends Thread  implements Initializable {
         }
 
 
-
-
     @FXML
     void LogoutBtnAction(ActionEvent event) throws IOException {
         Stage LoginStage = new Stage();
@@ -142,8 +122,6 @@ public class ClientChatController extends Thread  implements Initializable {
         writer.println(Discon);
         MsgRoom.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
 
-
-
     }
 
 
@@ -158,8 +136,6 @@ public class ClientChatController extends Thread  implements Initializable {
         sendtextTextfield.setText("");
 
     }
-
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
