@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Scene03" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixelmessage.AvatarEditController">
+   <children>
+      <ImageView fx:id="Bgimage" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\maxresdefault.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="WelcomeLabel" alignment="CENTER" layoutX="67.0" layoutY="66.0" prefHeight="43.0" prefWidth="467.0" text="WELCOME">
+         <font>
+            <Font name="Agency FB" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="SelectAvaterLabel" alignment="CENTER" layoutX="31.0" layoutY="130.0" prefHeight="58.0" prefWidth="537.0" text="Select Your Avatar" underline="true">
+         <font>
+            <Font name="Agency FB" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Avatar1" fitHeight="100.0" fitWidth="100.0" layoutX="67.0" layoutY="246.0" onMouseClicked="#Avatar1ClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\a81de1888b96c5063359346724cb17f2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Avatar2" fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="246.0" onMouseClicked="#Avatar2ClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\cool_cats_pixel_art_by_islimed_df8ghv8-fullview.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Avatar3" fitHeight="100.0" fitWidth="100.0" layoutX="434.0" layoutY="250.0" onMouseClicked="#Avatar3ClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\de7fld8-e0ffeb16-cca0-4cc5-9aa5-b4f152f3101e.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Confirmbtn" layoutX="250.0" layoutY="400.0" mnemonicParsing="false" onAction="#ConfirmBtnAction" prefHeight="75.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="CONFIRM" />
+      <Label fx:id="Avatar1Label" alignment="CENTER" layoutX="82.0" layoutY="350.0" prefHeight="22.0" prefWidth="67.0" text="Fire">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="Avatar2Label" alignment="CENTER" layoutX="267.0" layoutY="350.0" prefHeight="23.0" prefWidth="67.0" text="Cat">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="Avatar3Label" alignment="CENTER" layoutX="451.0" layoutY="350.0" prefHeight="31.0" prefWidth="67.0" text="Skull">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="GoBackBtn" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoBackBtnAction" prefHeight="43.0" prefWidth="67.0" style="-fx-background-radius: 15;" text="&lt;">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

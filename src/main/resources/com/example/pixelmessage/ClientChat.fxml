@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixelmessage.ClientChatController">
+   <children>
+      <ImageView fx:id="BgImage" fitHeight="403.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\939716.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="SandBtn" layoutX="392.0" layoutY="351.0" mnemonicParsing="false" onAction="#SandBtnAction" prefHeight="38.0" prefWidth="80.0" style="-fx-background-radius: 15;" text="Send">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="sendtextTextfield" layoutX="141.0" layoutY="351.0" prefHeight="38.0" prefWidth="242.0" promptText="Enter Text" style="-fx-background-color: White; -fx-background-radius: 15;">
+         <font>
+            <Font name="Agency FB" size="19.0" />
+         </font>
+      </TextField>
+      <Label fx:id="UserNameLabel" alignment="CENTER" layoutX="5.0" layoutY="103.0" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: White; -fx-background-radius: 15;" text=" Tamim mirza tulak">
+         <font>
+            <Font name="Agency FB" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="LogoutBtn" alignment="CENTER" layoutX="506.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutBtnAction" prefHeight="32.0" prefWidth="80.0" style="-fx-background-radius: 15;" text="LOGOUT" />
+      <ImageView fx:id="UserImage" fitHeight="87.0" fitWidth="80.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\cool_cats_pixel_art_by_islimed_df8ghv8-fullview.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="ChatBox" layoutX="141.0" layoutY="8.0" prefHeight="323.0" prefWidth="327.0">
+         <children>
+            <TextArea fx:id="MsgRoom" prefHeight="323.0" prefWidth="327.0" text="&#10;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

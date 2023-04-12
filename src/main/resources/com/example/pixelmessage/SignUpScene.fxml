@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Scene02" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixelmessage.SignUpSceneController">
+   <children>
+      <ImageView fx:id="BgImage" fitHeight="600.0" fitWidth="400.0" pickOnBounds="true">
+         <image>
+            <Image url="F:\Jfile\PixelMessage\src\maxresdefault.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="LogoLabel" alignment="CENTER" layoutX="118.0" layoutY="77.0" prefHeight="64.0" prefWidth="164.0" text="PixaText" underline="true">
+         <font>
+            <Font name="Agency FB" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="NewNameLabel" layoutX="44.0" layoutY="185.0" text="Username">
+         <font>
+            <Font name="Agency FB" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NewNameTextField" layoutX="44.0" layoutY="213.0" prefHeight="36.0" prefWidth="319.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="NewPassLabel" layoutX="44.0" layoutY="300.0" prefHeight="24.0" prefWidth="109.0" text="Password">
+         <font>
+            <Font name="Agency FB" size="23.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="NewPassPassField" layoutX="44.0" layoutY="328.0" prefHeight="38.0" prefWidth="319.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="SignUpbtn" layoutX="146.0" layoutY="413.0" mnemonicParsing="false" onAction="#SignUpBtnAction" prefHeight="44.0" prefWidth="109.0" style="-fx-background-radius: 15;" text="SIGNUP">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="SignUpSuccesfulLabel" alignment="CENTER" layoutX="26.0" layoutY="483.0" prefHeight="44.0" prefWidth="356.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="ExistLabel" alignment="CENTER" layoutX="52.0" layoutY="527.0" text="Already Have an Account? Go ahead and Login !" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="VerifyLabel" alignment="CENTER" layoutX="13.0" layoutY="375.0" prefHeight="31.0" prefWidth="375.0" text="SIGN UP FAILED!" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="LoginBtn" layoutX="146.0" layoutY="471.0" mnemonicParsing="false" onAction="#LoginBtnAction" prefHeight="44.0" prefWidth="109.0" style="-fx-background-radius: 15;" text="LOGIN">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
