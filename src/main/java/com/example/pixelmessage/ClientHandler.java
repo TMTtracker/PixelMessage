@@ -1,6 +1,6 @@
 package com.example.pixelmessage;
 
-import javafx.scene.layout.VBox;
+
 
 import java.io.*;
 import java.net.Socket;

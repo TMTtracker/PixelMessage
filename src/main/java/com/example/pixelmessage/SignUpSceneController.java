@@ -12,19 +12,16 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyCodeCombination;
-import javafx.scene.input.KeyCombination;
-import javafx.scene.input.KeyEvent;
+
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
+
 
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Scanner;
-import java.util.jar.Attributes;
+
 
 public class SignUpSceneController implements Initializable {
 
@@ -227,32 +224,6 @@ public class SignUpSceneController implements Initializable {
 }
 
 
-/*DataController.NewName = NewNameTextField.getText();
-        DataController.NewPass = NewPassPassField.getText();
-
-        String Username = NewNameLabel.getText();
-        String pass = NewPassPassField.getText();
-
-        String Fullinfo = Username+","+pass;
-        AppendText(Fullinfo);*/
-
-
-        /*if((VerifySignup(name,pass,Filepath)==true)){
-
-                Stage NextStage = new Stage();
-                Parent root = FXMLLoader.load(getClass().getResource("AvatarEdit.fxml"));
-                Scene Scene03 = new Scene(root);
-                NextStage.setScene(Scene03);
-                Image AppIcon = new Image(DataController.IconImage);
-                NextStage.getIcons().add(AppIcon);
-                NextStage.show();
-                NextStage.setTitle("PixaText");
-                Stage stage = (Stage) SignUpbtn.getScene().getWindow();
-                stage.close();
-
-
-
-                }
 
 
 
@@ -264,14 +235,6 @@ public class SignUpSceneController implements Initializable {
 
 
 
-
-
-
-
-
-                else {
-                VerifyLabel.setText("SIGNUP FAILED!!");
-                }*/
 
 
 
